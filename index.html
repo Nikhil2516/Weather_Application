@@ -3,106 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather_Application</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-    <!-- link font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap" rel="stylesheet">
+    <title>PICT-Pune Institute of Technology</title>
 
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./assets/Papirus-Team-Papirus-Apps-Weather.512.png" type="image/x-icon">
-
+    <style>
+        .content-section{
+            display: none;
+        }
+        #home{
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    
-    <div class="wrapper">
-        <h1>Weather App</h1>
+   <div data-role="header" data-position="fixed">
+        <h3>Pune Institute of Computer Technology, Pune</h3>
+        <h4>Accregated by NAAC A+</h4>
 
-        <div class="tab-container">
-            <p class="tab" data-userWeather>Your Weather</p>
-            <p class="tab" data-searchWeather>Search Weather</p>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-target="home">Home</a></li>
+                <li><a href="#" data-target="about">About</a></li>
+                <li><a href="#" data-target="department">Department</a></li>
+                <li><a href="#" data-target="contact">Contact</a></li>
+            </ul>
+        </div>
+   </div>
+
+   <!-- Content -->
+   <div role="main"  class="ui-content">
+        <!-- Home -->
+        <div id="home" class="content-section">
+            <h1 style="color:rgb(88, 88, 255)">Welcome, To Pune Institute of Computer technology</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem accusantium optio facere odit quasi ducimus numquam aspernatur dolorum saepe, unde aliquid commodi, sapiente et praesentium perferendis ratione facilis ut placeat.</p>
+            <br>
+            <h1>Vision</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae id, veniam eaque vel laborum laudantium soluta! Sunt numquam, unde voluptatum corporis eum aspernatur, in, ad fugit blanditiis facere consequatur accusantium.</p>
+            <br>
+            <h1>Mission</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta excepturi, ad quidem molestias neque illum eaque incidunt voluptatem hic in dolore nesciunt quis, quaerat consectetur dignissimos id architecto officiis omnis?</p>
         </div>
 
-        <div class="weather-container">
-
-            <!-- grant location container -->
-            <div class="sub-container grant-weather-location">
-                <img src="./assets/location.png" weight="80" height="80" loading="lazy">
-                <p>Grant Location Access</p>
-                <p>Allow Access to get Weather Information</p>
-                <button class="Grant-Access" data-grantAccess>Grant Access</button>
-            </div>
-
-            <!-- search form -> form container -->
-            <form class="sub-container form-container" data-SearchForm>
-                <input placeholder="Search a City......" data-cityInput>
-                <button class="btn" type="submit">
-                    <img src="./assets/search.png" weight="20" height="20" loading="lazy" >
-                </button>
-            </form>
-
-
-            <!-- loading container -->
-            <div class="sub-container loadingContainer">
-                <img src="./assets/loading.gif" weight="150" height="150">
-                <p>Loading</p>
-            </div>            
-
-            <!-- show weather info -->
-            <div class="sub-container user-info-container">
-
-                <!-- city name and flag -->
-                <div class = "name">
-                    <p data-cityName></p>
-                    <img data-countryCode>
-                </div>
-
-                <!-- weather description -->
-                <p data-WeatherDescription></p>
-                <!-- weather Icon -->
-                <img data-weatherIcon>
-                <!-- temperature display -->
-                <p data-temp></p>
-
-                <!-- 3 cards  -->
-
-                <div class="parameter-fuction">
-                    <!-- card-1 -->
-                    <div class="parameter">
-                        <img src="./assets/wind.png" >
-                        <p>Windspeed</p>
-                        <p data-windSpeed></p>
-                    </div>
-
-                    <!-- card-2 -->
-                    <div class="parameter">
-                        <img src="./assets/humidity.png" >
-                        <p>Humidity</p>
-                        <p data-humadity></p>
-                    </div>
-
-                    <!-- card-3 -->
-                    <div class="parameter">
-                        <img src="./assets/cloud.png" alt="">
-                        <p>Clouds</p>
-                        <p data-cloud></p>
-                    </div>
-                </div>
-
-            </div>
-
-
-             <!-- card 4 -->
-             <div class="sub-container error-container">
-                <img src="./assets/not-found.png">
-                <p error-message></p>
-            </div>
+        <div id="about" class="content-section">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempore, beatae quisquam, minima dolorem deserunt consequuntur incidunt reiciendis necessitatibus voluptas, tenetur perferendis eaque asperiores eveniet ea tempora ex aliquid eum explicabo. Minima, neque! Quisquam blanditiis excepturi velit vitae ut, molestias accusamus veritatis maiores et at harum perspiciatis fuga cumque, eos officia praesentium perferendis distinctio iusto, minus dicta laboriosam illum. Quis, et dolore ab hic numquam quibusdam! Officiis obcaecati blanditiis hic sed quidem eaque aspernatur dolorem. Error esse at alias totam dignissimos iusto, voluptas necessitatibus ea voluptates aspernatur sed ipsam impedit pariatur optio laborum eum, illo beatae quam amet maxime. Tenetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rem voluptates. Sit sunt unde, aliquam autem amet velit nisi consequuntur alias, asperiores voluptas consectetur saepe officia illum ipsa in, fugiat cupiditate nesciunt? Quos quasi ex temporibus esse pariatur quidem, numquam velit cupiditate eius libero, accusamus ipsa adipisci nostrum explicabo vitae atque necessitatibus animi eaque dolores? Ullam facere hic unde numquam tempora a reprehenderit autem laudantium consequuntur molestiae, tenetur ipsum illo assumenda quia atque in fugit. Commodi ut ullam dolorum cupiditate odit eum ipsum harum amet porro eos quo quasi beatae voluptatem blanditiis sed obcaecati rerum culpa reiciendis, qui placeat ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rem voluptates. Sit sunt unde, aliquam autem amet velit nisi consequuntur alias, asperiores voluptas consectetur saepe officia illum ipsa in, fugiat cupiditate nesciunt? Quos quasi ex temporibus esse pariatur quidem, numquam velit cupiditate eius libero, accusamus ipsa adipisci nostrum explicabo vitae atque necessitatibus animi eaque dolores? Ullam facere hic unde numquam tempora a reprehenderit autem laudantium consequuntur molestiae, tenetur ipsum illo assumenda quia atque in fugit. Commodi ut ullam dolorum cupiditate odit eum ipsum harum amet porro eos quo quasi beatae voluptatem blanditiis sed obcaecati rerum culpa reiciendis, qui placeat ea.</p>
         </div>
 
-    </div>
+        <div id="department" class="content-section">
+          <h2>Department</h2>
+           <div data-role="content">
+                <h4>Computer Engineering</h4>
+                <h4>Infomation Technology</h4>
+           </div>
+        </div>
 
+        <div id="contact" class="content-section">
+            <h1>Contact</h1>
+            <div data-role="content">
+                <label for="text-basic">Name</label>
+                <input type="text" name="text-basic" id="text-basic" value="" style="width: 5rem;"/>
+                <label for="text-basic">Email</label>
+                <input type="email" name="text-basic" id="text-basic" value=""/>
+                <label for="text-basic">Contact Number</label>
+                <input type="number" name="text-basic" id="text-basic" value=""/>
+                <label for="text-basic">Ask Query</label>
+                <textarea type="text" name="text-basic" id="text-basic" value=""></textarea>
+            </div>
+        </div>
+   </div>
 
-    <script src="./script.js"></script>
+   <div data-role="footer" style="margin-bottom: 0px;">
+        <h2>All Rights are Reserved @ 2002</h2>
+   </div>
+
+   <script>
+        $(document).on('click', "a[data-target]", function(){
+            var targetId = $(this).attr("data-target");
+            $(".content-section").hide();
+            $("#" + targetId).show();
+        });
+   </script>
 </body>
 </html>
